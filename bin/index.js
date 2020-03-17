@@ -60,7 +60,6 @@ const dirs = []
 const files = []
     
 createDir(destPath);//creates the root directory of the project
-console.log(__dirname);
 copyDir(originPath, destPath);//creates the children files and directories
 copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
 copyDir(distOriginPath, distDestPath);//more grandchildren
