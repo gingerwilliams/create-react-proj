@@ -1,0 +1,23 @@
+{
+  "name": "create-react-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gingerwilliams/create-react-proj.git"
+  },
+  "bin": {
+    "create-react-proj": "./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gingerwilliams/create-react-proj/issues"
+  },
+  "homepage": "https://github.com/gingerwilliams/create-react-proj#readme"
+}
