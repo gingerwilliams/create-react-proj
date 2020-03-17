@@ -51,7 +51,7 @@ const copyDir = (originPath, destPath) => {
 const destPath = './'; //dynamic
 const srcDestPath = `${destPath}/src`;
 const distDestPath = `${destPath}/dist`;
-const originPath = path.dirname('react/'); //dynamic
+const originPath = `${__dirname}/react`; //dynamic
 const srcOriginPath = `${originPath}/src`; //get from readDir function it returns an array
 const distOriginPath = `${originPath}/dist`; //get from readDir function it returns an array
 
@@ -61,6 +61,6 @@ const files = []
     
 createDir(destPath);//creates the root directory of the project
 console.log(__dirname);
-//copyDir(originPath, destPath);//creates the children files and directories
-//copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
-//copyDir(distOriginPath, distDestPath);//more grandchildren
+copyDir(originPath, destPath);//creates the children files and directories
+copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
+copyDir(distOriginPath, distDestPath);//more grandchildren
