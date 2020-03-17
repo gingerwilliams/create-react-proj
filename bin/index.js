@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs');
+const path = require('path');
 
 //returns an array of the directory // computation
 const readDir = (path) => {
@@ -45,11 +46,12 @@ const copyDir = (originPath, destPath) => {
     })
 }
 
+
 // make these dynamic?
 const destPath = './'; //dynamic
 const srcDestPath = `${destPath}/src`;
 const distDestPath = `${destPath}/dist`;
-const originPath = 'react/'; //dynamic
+const originPath = path.dirname('react/'); //dynamic
 const srcOriginPath = `${originPath}/src`; //get from readDir function it returns an array
 const distOriginPath = `${originPath}/dist`; //get from readDir function it returns an array
 
@@ -58,6 +60,7 @@ const dirs = []
 const files = []
     
 createDir(destPath);//creates the root directory of the project
-copyDir(originPath, destPath);//creates the children files and directories
-copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
-copyDir(distOriginPath, distDestPath);//more grandchildren
+console.log(__dirname);
+//copyDir(originPath, destPath);//creates the children files and directories
+//copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
+//copyDir(distOriginPath, distDestPath);//more grandchildren
