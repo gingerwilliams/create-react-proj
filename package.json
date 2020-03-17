@@ -2,16 +2,16 @@
   "name": "create-react-proj",
   "version": "1.0.8",
   "description": "",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "bin": {
+    "create-react-proj": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gingerwilliams/create-react-proj.git"
-  },
-  "bin": {
-    "create-react-proj": "bin/index.js"
   },
   "keywords": [],
   "author": "",
