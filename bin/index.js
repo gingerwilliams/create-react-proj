@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const message = console.log('Hello My Love again');
 const fs = require('fs');
 
 //returns an array of the directory // computation
@@ -7,7 +6,7 @@ const readDir = (path) => {
     return fs.readdirSync(path, {}, (err, files) => {
         if (err) throw err;
         else if (files.legnth === 0) return 'the directory is empty'
-        console.log('The dir has been read!');
+        
     })
 }
 
@@ -16,17 +15,14 @@ const readDir = (path) => {
 const createDir = (path,el = '') => {
     fs.mkdir(`${path}/${el}`, { recursive: true }, (err) => {
         if (err) throw err;
-        console.log(`The dir ${path}/${el} has been created!`);
     })
 }
 
 // create a file
 const createFile = (files) => {
     files.map(file => {
-        //console.log(Object.keys(file)[0]);
         fs.writeFile(`${Object.keys(file)[0]}`, Object.values(file)[0], 'utf8', (err) => {
             if (err) throw err;
-            console.log('The file has been saved!');
         });
     })
 }
@@ -35,7 +31,6 @@ const createFile = (files) => {
 const copyfile = (originPath,destPath,el) => {
     return fs.copyFile(`${originPath}/${el}`, `${destPath}/${el}`, (err) => {
         if (err) throw err;
-        console.log(`The file ${el} has been copied to the destination!`);
     });
 }
 
