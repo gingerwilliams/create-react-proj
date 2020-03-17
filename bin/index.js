@@ -49,7 +49,7 @@ const copyDir = (originPath, destPath) => {
 const destPath = './'; //dynamic
 const srcDestPath = `${destPath}/src`;
 const distDestPath = `${destPath}/dist`;
-const originPath = 'react'; //dynamic
+const originPath = require('./react'); //dynamic
 const srcOriginPath = `${originPath}/src`; //get from readDir function it returns an array
 const distOriginPath = `${originPath}/dist`; //get from readDir function it returns an array
 
