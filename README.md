@@ -10,3 +10,10 @@ cd react-proj
 create-react-proj
 ```
 
+## Running The Application
+
+```
+npm install
+npm run watch
+``  
+
