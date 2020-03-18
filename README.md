@@ -15,5 +15,5 @@ create-react-proj
 ```
 npm install
 npm run watch
-``  
+```
 
