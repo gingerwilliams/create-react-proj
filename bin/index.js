@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const npm = require('npm');
 
 //returns an array of the directory // computation
 const readDir = (path) => {
@@ -63,6 +64,8 @@ createDir(destPath);//creates the root directory of the project
 copyDir(originPath, destPath);//creates the children files and directories
 copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
 copyDir(distOriginPath, distDestPath);//more grandchildren
+
+npm.install 
 
 console.log('\x1b[34m%s\x1b[0m', 'Files Are Built!!! Happy Coding =)');
 
