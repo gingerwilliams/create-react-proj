@@ -1,6 +1,6 @@
 {
   "name": "create-react-proj",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "main": "./bin/index.js",
   "bin": {
@@ -13,7 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/gingerwilliams/create-react-proj.git"
   },
-  "keywords": ["React","Boostrap","Jest", "Webpack", "Babel", "Redux"],
+  "keywords": [
+    "React",
+    "Boostrap",
+    "Jest",
+    "Webpack",
+    "Babel",
+    "Redux"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
