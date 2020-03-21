@@ -65,15 +65,5 @@ copyDir(originPath, destPath);//creates the children files and directories
 copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
 copyDir(distOriginPath, distDestPath);//more grandchildren
 
-npm.load((error,npm)=>{
-    if (error) {
-        console.log("npm error: ", error);
-        return;
-    }else{
-        npm.install()
-    }
-})
- 
-
 console.log('\x1b[34m%s\x1b[0m', 'Files Are Built!!! Happy Coding =)');
 
