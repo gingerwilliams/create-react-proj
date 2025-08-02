@@ -4,7 +4,7 @@ Create your react projects with minimum dependencies
 ## Installation Instructions
 
 ```
-npm install create-react-proj
+npm install -g create-react-proj
 mkdir react-proj
 cd react-proj
 create-react-proj
